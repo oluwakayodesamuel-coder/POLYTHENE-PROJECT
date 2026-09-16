@@ -7,22 +7,34 @@
     <link rel="stylesheet" href="brand.css" />
   </head>
   <body>
-    <nav class="site-nav">
-      <div class="logo nav">
-        <img
-          src="images/miracle-polythene-logo.svg"
-          alt="miracle logo"
-          class="logo"
-        />
-        <div>MIRACLE POLYTHENE</div>
-      </div>
-      <ul>
-        <li><a href="#materials">Materials</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#range">Products</a></li>
-        <li><a href="#custom">Custom order</a></li>
-      </ul>
-    </nav>
+    <div class="navbar-shell">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+      <nav class="site-nav">
+        <div class="logo nav">
+          <img
+            src="images/miracle-polythene-logo.svg"
+            alt="miracle logo"
+            class="logo"
+          />
+          <span class="word">Miracle Polythene</span>
+        </div>
+        <ul>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#range">Products</a></li>
+          <li><a href="#custom">Custom order</a></li>
+        </ul>
+        <div class="actions">
+          <label
+            for="nav-toggle"
+            class="nav-toggle-label"
+            aria-label="Toggle menu"
+          >
+            <span></span><span></span><span></span>
+          </label>
+        </div>
+      </nav>
+    </div>
 
     <!-- OPENING: asymmetric split on the actual product, not a stock hero -->
     <header class="opening">
