@@ -145,13 +145,16 @@ a:hover {
 }
 
 /* --- Nav --- */
-.navbar-shell { background: var(--color-warm-white); 
+.navbar-shell {
+  background: var(--color-warm-white);
   position: fixed;
   z-index: 10000;
   width: 100%;
 }
-.nav-toggle-checkbox { display: none; }
- 
+.nav-toggle-checkbox {
+  display: none;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -184,10 +187,20 @@ a:hover {
   margin: 0;
   padding: 0;
 }
-.site-nav a { color: var(--color-charcoal); text-decoration: none; font-size: var(--fs-small); }
-.site-nav a:hover { color: var(--color-red); }
- 
-.site-nav .actions { display: flex; align-items: center; flex-shrink: 0; }
+.site-nav a {
+  color: var(--color-charcoal);
+  text-decoration: none;
+  font-size: var(--fs-small);
+}
+.site-nav a:hover {
+  color: var(--color-red);
+}
+
+.site-nav .actions {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 .nav-toggle-label {
   display: none;
   flex-direction: column;
@@ -195,8 +208,12 @@ a:hover {
   cursor: pointer;
   padding: 0.4rem;
 }
-.nav-toggle-label span { width: 22px; height: 2px; background: var(--color-charcoal); border-radius: 2px; }
- 
+.nav-toggle-label span {
+  width: 22px;
+  height: 2px;
+  background: var(--color-charcoal);
+  border-radius: 2px;
+}
 
 /* --- Opening: asymmetric split, not a centered hero --- */
 /* --- Opening: full-bleed photo hero with dark overlay + diagonal red accents --- */
@@ -206,7 +223,7 @@ a:hover {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url('images/rolls-macro.jpg');
+  background-image: url("images/rolls-macro.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -262,7 +279,11 @@ a:hover {
   opacity: 0.85;
 }
 
-.opening-actions { display: flex; gap: var(--space-md); margin-top: var(--space-md); }
+.opening-actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
 
 /* secondary button needs a white outline on the dark photo, instead of
    the blue outline it uses on light backgrounds */
@@ -283,9 +304,14 @@ a:hover {
   border-radius: var(--radius);
   max-width: 46ch;
 }
-.roll-caption p { margin: 0; font-size: var(--fs-small); }
-.roll-caption strong { color: var(--color-red); font-family: var(--font-display); }
-
+.roll-caption p {
+  margin: 0;
+  font-size: var(--fs-small);
+}
+.roll-caption strong {
+  color: var(--color-red);
+  font-family: var(--font-display);
+}
 
 /* --- Materials: two technical columns inside .section-technical --- */
 .materials-grid {
@@ -496,25 +522,62 @@ footer a:hover {
   opacity: 0.7;
 }
 @media (max-width: 860px) {
-  .opening { min-height: 70vh; }
-  .opening-copy { padding: var(--space-lg); }
-  .opening-copy h1 { font-size: 2.2rem; }
-  .opening-corner { width: 110px; height: 110px; }
+  .opening {
+    min-height: 70vh;
+  }
+  .opening-copy {
+    padding: var(--space-lg);
+  }
+  .opening-copy h1 {
+    font-size: 2.2rem;
+  }
+  .opening-corner {
+    width: 110px;
+    height: 110px;
+  }
 }
 @media (max-width: 860px) {
-  .opening { min-height: 70vh; }
-  .opening-copy { padding: var(--space-lg); }
-  .opening-copy h1 { font-size: 2.2rem; }
-  .opening-corner { width: 110px; height: 110px; }
-  .materials-grid { grid-template-columns: 1fr; gap: var(--space-lg); }
-  .process-row { grid-template-columns: 1fr 1fr; row-gap: var(--space-lg); }
-  .process-row::before { display: none; }
-  .custom { grid-template-columns: 1fr; }
-  .custom-photo { aspect-ratio: 16 / 9; }
-  .spec-index { display: block; overflow-x: auto; }
-  footer .wrap { grid-template-columns: 1fr; }
- 
-  .site-nav { flex-wrap: wrap; }
+  .opening {
+    min-height: 70vh;
+  }
+  .opening-copy {
+    padding: var(--space-lg);
+  }
+  .opening-copy h1 {
+    font-size: 2.2rem;
+  }
+  .opening-corner {
+    width: 110px;
+    height: 110px;
+  }
+  .materials-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  .process-row {
+    grid-template-columns: 1fr 1fr;
+    row-gap: var(--space-lg);
+  }
+  .process-row::before {
+    display: none;
+  }
+  .custom {
+    grid-template-columns: 1fr;
+  }
+  .custom-photo {
+    aspect-ratio: 16 / 9;
+  }
+  .spec-index {
+    display: block;
+    overflow-x: auto;
+  }
+  footer .wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+  }
   .site-nav ul {
     order: 3;
     flex-basis: 100%;
@@ -525,8 +588,20 @@ footer a:hover {
     overflow: hidden;
     transition: max-height 0.25s ease;
   }
-  .site-nav ul li { width: 100%; }
-  .site-nav ul a { display: block; width: 100%; padding: 0.65rem 0; border-bottom: 1px solid var(--color-border); }
-  .nav-toggle-label { display: flex; }
-  .nav-toggle-checkbox:checked ~ .site-nav ul { max-height: 320px; margin-top: var(--space-md); }
+  .site-nav ul li {
+    width: 100%;
+  }
+  .site-nav ul a {
+    display: block;
+    width: 100%;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .nav-toggle-label {
+    display: flex;
+  }
+  .nav-toggle-checkbox:checked ~ .site-nav ul {
+    max-height: 320px;
+    margin-top: var(--space-md);
+  }
 }
